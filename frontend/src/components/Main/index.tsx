@@ -1,6 +1,18 @@
 import React from 'react';
 
-import { Container, Header, BackIcon, ProfileInfo } from './styles';
+import ProfilePage from '../ProfilePage';
+
+import {
+  Container,
+  Header,
+  BackIcon,
+  ProfileInfo,
+  BottomMenu,
+  HomeIcon,
+  SearchIcon,
+  EmailIcon,
+  BellIcon,
+} from './styles';
 
 export default function Main() {
   return (
@@ -16,14 +28,14 @@ export default function Main() {
         </ProfileInfo>
       </Header>
 
-      {/* <ProfilePage /> */}
+      <ProfilePage />
 
-      {/* <BottomMenu>
-        <HomeIcon />
+      <BottomMenu>
+        <HomeIcon className="active" />
         <SearchIcon />
         <BellIcon />
         <EmailIcon />
-      </BottomMenu> */}
+      </BottomMenu>
     </Container>
   );
 }
