@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Feed from '../Feed';
+
 import {
   Container,
   Banner,
@@ -8,6 +10,7 @@ import {
   LocationIcon,
   CakeIcon,
   Followage,
+  EditButton,
 } from './styles';
 
 export default function ProfilePage() {
@@ -18,7 +21,7 @@ export default function ProfilePage() {
       </Banner>
 
       <ProfileData>
-        {/* <EditButton outlined>Editar perfil</EditButton> */}
+        <EditButton outlined>Editar perfil</EditButton>
 
         <h1>Takuya</h1>
         <h2>Takkuya_00</h2>
@@ -48,6 +51,8 @@ export default function ProfilePage() {
           </span>
         </Followage>
       </ProfileData>
+
+      <Feed />
     </Container>
   );
 }
